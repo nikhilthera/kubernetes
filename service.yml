@@ -1,0 +1,15 @@
+apiversion: v1
+kind: service
+metaadata:
+  name: kubeapp
+spec:
+  selector:
+    app: kubeapp
+  ports:
+  - protocol: tcp
+    port: 80
+    targetport: 8080
+    nodeport: 3000
+  type: nodeport
+    
+  
