@@ -1,0 +1,12 @@
+apiversion: v1
+kind: Pod
+metadata:
+  name: kubeapp
+  labels:
+    app:kubeaapp
+specs:
+  containers:
+    - name: kubeapp
+      image: kammana/nodeapp:v1
+      ports:
+      - containerport:  8080
